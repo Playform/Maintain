@@ -21,8 +21,8 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "🖋️ Source — 👐🏻 Open —",
-		"email": "Source/Open@PlayForm.Cloud",
-		"url": "HTTPS://PlayForm.Cloud"
+		"email": "Source/Open@PlayForm.LTD",
+		"url": "HTTPS://PlayForm.LTD"
 	},
 	"type": "module",
 	"main": "./Target/Class/Maintain.js",
@@ -47,7 +47,7 @@
 		"@octokit/types": "13.6.1",
 		"@playform/build": "0.1.8",
 		"@types/etag": "1.8.3",
-		"@types/node": "22.8.6",
+		"@types/node": "22.9.0",
 		"@types/pacote": "11.1.8"
 	},
 	"publishConfig": {
