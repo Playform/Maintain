@@ -1,5 +1,31 @@
 ## 0.1.2
 
+### Added
+
+-   Added `Action.sh` script for managing GitHub Actions.
+-   Added import statements for `Files` type in various command files.
+
+### Changed
+
+-   Updated `.npmignore` to replace `Documentation/` with `docs/` and
+    `Summary.md` with `Action.sh`.
+-   Updated `package.json`:
+    -   Bumped version from 0.1.1 to 0.1.2.
+    -   Updated email to `Source/Open@PlayForm.LTD`.
+    -   Updated URL to `HTTPS://PlayForm.LTD`.
+    -   Updated `deepmerge-ts` to version 7.1.3.
+    -   Updated `@octokit/types` to version 13.6.1.
+    -   Updated `@playform/build` to version 0.1.8.
+    -   Updated `@types/node` to version 22.9.0.
+-   Updated various GitHub Actions and workflows:
+    -   Updated `cloudflare/wrangler-action` to v3.9.0 in `Cloudflare.ts`.
+    -   Updated `actions/setup-node` to v4.0.4 in `Node.ts` and `NPM.yml`.
+    -   Updated `actions/upload-artifact` to v4.4.3 in `Node.ts`.
+    -   Updated `actions/cache` to v4.1.1 in `Rust.ts`.
+    -   Updated `actions/checkout` to v4.2.1 in multiple workflow files.
+    -   Updated `github/codeql-action` to v3.26.13 in `codeql.yml`.
+-   Improved code formatting and consistency across various TypeScript files.
+
 ## 0.1.1
 
 ### Changed
