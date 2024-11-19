@@ -40,7 +40,7 @@ export default async () =>
 							Environment === "Cloudflare"
 						) {
 							Base.add(`
-            - uses: cloudflare/wrangler-action@v3.9.0
+            - uses: cloudflare/wrangler-action@v3.12.1
               with:
                   apiToken: \${{ secrets.CF_API_TOKEN }}
                   accountId: \${{ secrets.CF_ACCOUNT_ID }}

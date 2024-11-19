@@ -64,9 +64,9 @@ jobs:
                 node-version: [18]
 
         steps:
-            - uses: actions/checkout@v4.2.1
+            - uses: actions/checkout@v4.2.2
 
-            - uses: github/codeql-action/init@v3.26.13
+            - uses: github/codeql-action/init@v3.27.4
               with:
                   languages: ${{ matrix.language }}
 
@@ -85,7 +85,7 @@ jobs:
                           --unsafe-perm=true
                         ]
 
-            - uses: actions/setup-node@v4.0.4
+            - uses: actions/setup-node@v4.1.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -97,6 +97,6 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: github/codeql-action/analyze@v3.26.13
+            - uses: github/codeql-action/analyze@v3.27.4
               with:
                   category: "/language:${{matrix.language}}"
