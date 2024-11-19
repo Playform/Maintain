@@ -1,3 +1,14 @@
+## 0.1.3
+
+### Changed
+
+-   Updated `cloudflare/wrangler-action` to v3.12.1 in `Cloudflare.ts`.
+-   Updated `actions/setup-node` to v4.1.0 in `Node.ts` and `NPM.yml`.
+-   Updated `actions/cache` to v4.1.2 in `Rust.ts`.
+-   Updated `actions/checkout` to v4.2.2 in multiple workflow files
+    (`Cloudflare.yml`, `codeql.yml`, `Node.yml`, `NPM.yml`, `Rust.yml`).
+-   Updated `github/codeql-action` to v3.27.4 in `codeql.yml`.
+
 ## 0.1.2
 
 ### Added
