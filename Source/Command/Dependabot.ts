@@ -19,6 +19,7 @@ export default async () =>
 				await import("@Function/Directory.js")
 			).default(await (await import("@Function/Package.js")).default())) {
 				const GitHub = `${_Directory}/.github`;
+
 				const Base = await File();
 
 				if (Path === "/") {
@@ -40,6 +41,7 @@ export default async () =>
 					switch (Package.split(".").pop()) {
 						case "csproj":
 							return "nuget";
+
 						default:
 							return "npm";
 					}
@@ -54,6 +56,7 @@ export default async () =>
 						switch (Environment) {
 							case "Cargo":
 								return "lockfile-only";
+
 							default:
 								return "increase";
 						}

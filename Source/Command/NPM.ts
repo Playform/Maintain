@@ -20,6 +20,7 @@ export default async () =>
 				await (await import("@Function/Package.js")).default("NPM"),
 			)) {
 				const GitHub = `${_Directory}/.github`;
+
 				const Base = await File();
 
 				if (Path === "/workflows/" && Name === "NPM.yml") {
@@ -53,6 +54,7 @@ export default async () =>
 										)
 									) {
 										const values = JSONPackage[key];
+
 										if (key === "scripts") {
 											for (const scripts in values) {
 												if (

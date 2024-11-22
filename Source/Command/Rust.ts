@@ -22,6 +22,7 @@ export default async () =>
 				await (await import("@Function/Package.js")).default("Cargo"),
 			)) {
 				const GitHub = `${_Directory}/.github`;
+
 				const Base = await File();
 
 				if (Path === "/workflows/" && Name === "Rust.yml") {

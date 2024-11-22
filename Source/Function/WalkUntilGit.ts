@@ -6,6 +6,7 @@ import type Interface from "../Interface/WalkUntilGit.js";
  */
 export const _Function = (async (...[Search, From]) => {
 	const Path = (await import("path")).dirname(Search);
+
 	const Original = From ?? Path;
 
 	if (Path === Search) {
