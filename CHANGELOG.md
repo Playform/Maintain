@@ -131,7 +131,7 @@
 ### Changed
 
 -   Updated version to 0.0.3
--   Updated homepage to `https://github.com/Playform/Maintain#readme`
+-   Updated homepage to `HTTPS://github.com/Playform/Maintain#readme`
 -   Added `Document` script
 
 ### Added
