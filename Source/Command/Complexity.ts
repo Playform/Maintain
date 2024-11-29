@@ -14,7 +14,9 @@ export default async () => {
 		await import("@Function/Directory.js")
 	).default(await (await import("@Function/Package.js")).default())) {
 		console.log("------ Complexity ------");
+
 		console.log(_Directory);
+
 		console.log(FilesPackage);
 
 		// const rx = /[\s,\]\[\(\)]+/g;
