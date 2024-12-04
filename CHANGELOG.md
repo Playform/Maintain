@@ -1,5 +1,19 @@
 ## 0.1.4
 
+### Changed
+
+- Updated package dependencies:
+    - Updated `dotenv` to version 16.4.7
+    - Updated `@octokit/types` to version 13.6.2
+    - Updated `@types/node` to version 22.10.1
+- Updated GitHub Actions:
+    - Updated `cloudflare/wrangler-action` to v3.13.0 in `Cloudflare.ts`
+    - Updated `github/codeql-action` to v3.27.6 in `codeql.yml`
+    - Updated `pozil/auto-assign-issue` to v2.0.1 in `GitHub.yml`
+- Reordered environment variables in multiple workflow files:
+    - Added `DO_NOT_TRACK: 1` at the top in `Cloudflare.yml`, `codeql.yml`,
+      `GitHub.yml`, `Node.yml`, `NPM.yml`, and `Rust.yml`
+
 ## 0.1.3
 
 ### Changed
