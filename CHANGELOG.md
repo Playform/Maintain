@@ -1,5 +1,17 @@
 ## 0.1.5
 
+### Changes
+
+- Update dependencies:
+    - Bump `@octokit/core` from 6.1.2 to 6.1.3
+    - Bump `commander` from 12.1.0 to 13.0.0
+    - Bump `zod` from 3.23.8 to 3.24.1
+    - Bump `@playform/build` from 0.1.9 to 0.2.0
+    - Bump `@types/node` from 22.10.1 to 22.10.5
+- Update GitHub actions:
+    - Bump `actions/upload-artifact` from v4.4.3 to v4.5.0 in `Node.ts`
+    - Bump `actions/cache` from v4.1.2 to v4.2.0 in `Rust.ts`
+
 ## 0.1.4
 
 ### Changed
