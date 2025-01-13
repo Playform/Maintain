@@ -16,24 +16,58 @@ export default async (Repository: string[] | Set<string> = []) => {
 		name: string;
 	}[] = [];
 
-	for (const repo of (await Request(`GET /users/${User}/repos`))?.data) {
-		Repositories.push({
-			owner: User,
-			name: repo.name,
-		});
+	let Current = 1;
+	let _Page = 20;
+
+	for (let Page = 0; Page < 50000; Page += _Page) {
+		const Request = (
+			await _Request(
+				`GET /users/${User}/repos?page=${Current}&per_page=${Page}`,
+			)
+		)?.data;
+
+		for (const Repository of Request) {
+			Repositories.push({
+				owner: User,
+				name: Repository.name,
+			});
+		}
+
+		Current++;
+
+		if (Request.length < _Page) {
+			break;
+		}
 	}
 
-	for (const org of (await Request(`GET /users/${User}/orgs`))?.data) {
+	for (const Organization of (await _Request(`GET /users/${User}/orgs`))
+		?.data) {
 		Organizations.push({
-			name: org.login,
+			name: Organization.login,
 		});
 
-		for (const repo of (await Request(`GET /orgs/${org.login}/repos`))
-			?.data) {
-			Repositories.push({
-				owner: org.login,
-				name: repo.name,
-			});
+		let Current = 1;
+		let _Page = 20;
+
+		for (let Page = 0; Page < 50000; Page += _Page) {
+			const Request = (
+				await _Request(
+					`GET /orgs/${Organization.login}/repos?page=${Current}&per_page=${Page}`,
+				)
+			)?.data;
+
+			for (const Repository of Request) {
+				Repositories.push({
+					owner: Organization.login,
+					name: Repository.name,
+				});
+			}
+
+			Current++;
+
+			if (Request.length < _Page) {
+				break;
+			}
 		}
 	}
 
@@ -44,8 +78,6 @@ export default async (Repository: string[] | Set<string> = []) => {
 	for (const { name, owner } of Repositories) {
 		/* Checking if the repository is in the list of repositories. */
 		for (const repository of Repository) {
-			console.log(repository);
-			
 			if (name === repository) {
 				Pass = true;
 			} else {
@@ -56,15 +88,18 @@ export default async (Repository: string[] | Set<string> = []) => {
 		if (Pass === null || Pass) {
 			// start: actions/workflows
 			for (const Workflow of (
-				await Request(`GET /repos/${owner}/${name}/actions/workflows`, {
-					owner: owner,
-					repo: name,
-				})
+				await _Request(
+					`GET /repos/${owner}/${name}/actions/workflows`,
+					{
+						owner: owner,
+						repo: name,
+					},
+				)
 			)?.data?.workflows) {
-				await Request(
+				await _Request(
 					`POST /repos/${owner}/${name}/actions/workflows/${Workflow.id}/dispatches`,
 					{
-						ref: "main",
+						ref: "Current",
 					},
 				);
 			}
@@ -74,4 +109,4 @@ export default async (Repository: string[] | Set<string> = []) => {
 	// end: repos
 };
 
-export const { default: Request } = await import("@Function/Request.js");
+export const { default: _Request } = await import("@Function/Request.js");

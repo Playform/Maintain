@@ -23,7 +23,7 @@ export const Variable: Set<{
 		Description: "Clean GitHub repositories.",
 		Arguments: new Set([
 			{
-				Name: "[repositories...]",
+				Name: "[Repositories...]",
 				Description: "Repositories to clean.",
 			},
 		]),
@@ -34,7 +34,7 @@ export const Variable: Set<{
 		Description: "Trigger dispatch events.",
 		Arguments: new Set([
 			{
-				Name: "[repositories...]",
+				Name: "[Repositories...]",
 				Description:
 					"Repositories on which to trigger dispatch events.",
 			},
@@ -51,7 +51,7 @@ export const Variable: Set<{
 		Name: "Edit",
 		Arguments: new Set([
 			{
-				Name: "[repositories...]",
+				Name: "[Repositories...]",
 				Description: "Repositories to edit.",
 			},
 		]),
