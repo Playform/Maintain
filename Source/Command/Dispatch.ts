@@ -44,6 +44,8 @@ export default async (Repository: string[] | Set<string> = []) => {
 	for (const { name, owner } of Repositories) {
 		/* Checking if the repository is in the list of repositories. */
 		for (const repository of Repository) {
+			console.log(repository);
+			
 			if (name === repository) {
 				Pass = true;
 			} else {
