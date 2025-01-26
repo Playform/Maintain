@@ -95,7 +95,7 @@
 - Updated `deepmerge-ts` to version 7.0.3
 - Updated `@playform/build` to version 0.1.0
 - Updated `@types/node` to version 20.14.10
-- Updated project description to "🔧 Maintain —"
+- Updated project description to "Maintain 🔧"
 
 ### Fixed
 
@@ -110,7 +110,7 @@
 - Updated `deepmerge-ts` to version 7.0.3
 - Updated `@playform/build` to version 0.1.0
 - Updated `@types/node` to version 20.14.10
-- Updated project description to "🔧 Maintain —"
+- Updated project description to "Maintain 🔧"
 
 ### Fixed
 
@@ -137,7 +137,7 @@
 ### Changed
 
 - Updated version to 0.0.4
-- Updated project description to "🔧 Maintain —"
+- Updated project description to "Maintain 🔧"
 - Updated homepage URL to use HTTPS
 - Updated author information
 - Updated dependencies:
