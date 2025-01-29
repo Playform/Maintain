@@ -1,8 +1,8 @@
-# 🔧 [Maintain] —
+# [Maintain] 🔧
 
 Maintain GitHub.
 
-## 🚀 Installation
+## Installation 🚀
 
 Using NPM
 
