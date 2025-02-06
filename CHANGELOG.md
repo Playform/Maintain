@@ -1,6 +1,6 @@
 ## 0.1.5
 
-### Changes
+### Change
 
 - Update dependencies:
     - Bump `@octokit/core` from 6.1.2 to 6.1.3
@@ -14,7 +14,7 @@
 
 ## 0.1.4
 
-### Changed
+### Change
 
 - Updated package dependencies:
     - Updated `dotenv` to version 16.4.7
@@ -30,7 +30,7 @@
 
 ## 0.1.3
 
-### Changed
+### Change
 
 - Updated `cloudflare/wrangler-action` to v3.12.1 in `Cloudflare.ts`.
 - Updated `actions/setup-node` to v4.1.0 in `Node.ts` and `NPM.yml`.
@@ -41,12 +41,12 @@
 
 ## 0.1.2
 
-### Added
+### Add
 
 - Added `Action.sh` script for managing GitHub Actions.
 - Added import statements for `Files` type in various command files.
 
-### Changed
+### Change
 
 - Updated `.npmignore` to replace `Documentation/` with `docs/` and `Summary.md`
   with `Action.sh`.
@@ -69,7 +69,7 @@
 
 ## 0.1.1
 
-### Changed
+### Change
 
 - Updated `@playform/build` to version 0.1.3
 - Updated `@types/node` to version 22.5.0
@@ -78,7 +78,7 @@
 
 ## 0.1.0
 
-### Changed
+### Change
 
 - Updated `deepmerge-ts` to version 7.1.0
 - Updated `@playform/build` to version 0.1.2
@@ -89,7 +89,7 @@
 
 ## 0.0.8
 
-### Changed
+### Change
 
 - Updated version to 0.0.8
 - Updated `deepmerge-ts` to version 7.0.3
@@ -104,7 +104,7 @@
 
 ## 0.0.7
 
-### Changed
+### Change
 
 - Updated version to 0.0.8
 - Updated `deepmerge-ts` to version 7.0.3
@@ -119,14 +119,14 @@
 
 ## 0.0.6
 
-### Changed
+### Change
 
 - Updated version to 0.0.6
 - Updated `@playform/build` to version 0.0.10
 
 ## 0.0.5
 
-### Changed
+### Change
 
 - Updated version to 0.0.5
 - Added `@playform/build` as a peer dependency
@@ -134,7 +134,7 @@
 
 ## 0.0.4
 
-### Changed
+### Change
 
 - Updated version to 0.0.4
 - Updated project description to "Maintain 🔧"
@@ -158,24 +158,24 @@
 
 ## 0.0.3
 
-### Changed
+### Change
 
 - Updated version to 0.0.3
 - Updated homepage to `HTTPS://github.com/Playform/Maintain#readme`
 - Added `Document` script
 
-### Added
+### Add
 
 - Added `@playform/document` as a dependency
 
 ## 0.0.2
 
-### Changed
+### Change
 
 - Updated version to 0.0.2
 
 ## 0.0.1
 
-### Added
+### Add
 
 - Initial Release
